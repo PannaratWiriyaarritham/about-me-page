@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pannarat Wiriyaarritham — About Me</title>
+  <meta name="description" content="About me page, generated from my GitHub profile.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --accent: #4cc38a; }
+    body { font-family: "Chakra Petch", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif; }
+    .hero {
+      background: radial-gradient(1200px 500px at 20% -10%, rgba(76,195,138,.25), transparent),
+                  radial-gradient(900px 400px at 100% 0%, rgba(76,195,138,.15), transparent);
+      border-bottom: 1px solid rgba(255,255,255,.1);
+    }
+    .avatar {
+      width: 140px; height: 140px; border-radius: 50%; object-fit: cover;
+      box-shadow: 0 10px 30px rgba(0,0,0,.35), 0 0 0 4px rgba(76,195,138,.35);
+    }
+    .badge-accent { background: var(--accent); color: #0b1115; }
+    a.link-accent { color: var(--accent); text-decoration: none; }
+    a.link-accent:hover { text-decoration: underline; }
+    .card { border: 1px solid rgba(255,255,255,.08); }
+    .btn-accent { background: var(--accent); color: #0b1115; border: none; }
+    .btn-accent:hover { filter: brightness(0.95); }
+    /* improvements */
+    html { scroll-behavior: smooth; }
+    .tooltray { position: sticky; top: 0; z-index: 1030; backdrop-filter: blur(8px); background: rgba(11,17,21,.4); border: 1px solid rgba(255,255,255,.08); border-radius: .75rem; padding: .25rem .5rem; }
+  </style>
+</head>
+<body>
+  <header class="hero py-5">
+    <div class="container">
+      <div class="tooltray d-flex justify-content-end align-items-center gap-2 mb-3">
+        <div class="btn-group btn-group-sm" role="group" aria-label="Language toggle">
+          <button id="btn-en" type="button" class="btn btn-outline-light">EN</button>
+          <button id="btn-th" type="button" class="btn btn-outline-light">TH</button>
+        </div>
+        <button id="themeToggle" type="button" class="btn btn-outline-light btn-sm" aria-label="Toggle dark/light">Dark mode</button>
+      </div>
+      <div class="row align-items-center g-4">
+        <div class="col-12 col-md-auto text-center">
+          <img class="avatar" src="https://avatars.githubusercontent.com/PannaratWiriyaarritham" alt="Pannarat Wiriyaarritham avatar">
+        </div>
+        <div class="col">
+          <span class="badge badge-accent mb-3" data-i18n="badge">IT Student</span>
+          <h1 class="display-5 fw-bold mb-2">Pannarat Wiriyaarritham</h1>
+          <p class="lead mb-3" data-i18n="tagline">Just a normal IT student</p>
+          <div class="d-flex flex-wrap gap-2 align-items-center text-secondary">
+            <span class="d-inline-flex align-items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg> Bang Khatum, Phitsanulok, Thailand (UTC+07:00)
+            </span>
+            <span class="vr"></span>
+            <a class="link-accent" href="https://github.com/PannaratWiriyaarritham" target="_blank" rel="noopener">@PannaratWiriyaarritham on GitHub</a>
+          </div>
+          <div class="mt-4 d-flex gap-2">
+            <a class="btn btn-accent btn-lg" href="https://github.com/PannaratWiriyaarritham" target="_blank" rel="noopener" data-i18n="btn_view_github">View GitHub</a>
+            <a class="btn btn-outline-light btn-lg" href="#projects" data-i18n="btn_projects">Projects</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <!-- About section -->
+        <div class="col-12 col-lg-7">
+          <div class="card h-100">
+            <div class="card-body p-4">
+              <h2 class="h4 fw-semibold mb-3" data-i18n="about">About</h2>
+              <p class="mb-3" data-i18n="about_p1">สวัสดี! ฉันคือ <strong>Pannarat</strong> — นักศึกษาสาย IT ที่ชอบลองของใหม่ ๆ และต่อยอดไอเดียให้กลายเป็นโปรเจกต์เล็ก ๆ ที่ใช้งานได้จริง ทั้งเว็บไซต์ บอท และเครื่องมือเล็ก ๆ สำหรับชีวิตประจำวัน</p>
+              <p class="mb-0" data-i18n="about_p2">หน้านี้สร้างจากข้อมูลสาธารณะบน GitHub โปรด <a class="link-accent" href="https://github.com/PannaratWiriyaarritham" target="_blank" rel="noopener">ติดตาม</a> เพื่อดูงานล่าสุดของฉัน 🙌</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick facts -->
+        <div class="col-12 col-lg-5">
+          <div class="card h-100">
+            <div class="card-body p-4">
+              <h2 class="h4 fw-semibold mb-3" data-i18n="quick_facts">Quick facts</h2>
+              <ul class="list-unstyled m-0">
+                <li class="mb-2">• <span class="fw-semibold" data-i18n="quick_education">Education:</span> Vocational Certificate (ปวช.) Year 2 — Information Technology, Phitsanulok Vocational College</li>
+                <li class="mb-2">• <span class="fw-semibold" data-i18n="quick_focus">Focus:</span> Web development (Bootstrap 5), small utilities, and learning-by-building projects</li>
+                <li class="mb-2">• <span class="fw-semibold" data-i18n="quick_interests">Interests:</span> Chess (following grandmasters and openings), exploring new tech, and experimenting with GitHub Pages</li>
+                <li class="mb-2">• <span class="fw-semibold" data-i18n="quick_location">Location/Timezone:</span> Bang Khatum, Phitsanulok • UTC+07:00</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <section id="projects" class="mt-5">
+        <div class="d-flex align-items-center justify-content-between mb-3">
+          <h2 class="h4 fw-semibold m-0" data-i18n="projects">Projects</h2>
+          <a class="link-accent" href="https://github.com/PannaratWiriyaarritham?tab=repositories" target="_blank" rel="noopener">See all repositories →</a>
+        </div>
+
+        <div class="row g-4">
+          <!-- Repo: github.io site -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100">
+              <div class="card-body p-4 d-flex flex-column">
+                <div class="d-flex align-items-start justify-content-between mb-2">
+                  <h3 class="h5 fw-semibold m-0">PannaratWiriyaarritham.github.io</h3>
+                  <span class="badge text-bg-secondary">Public</span>
+                </div>
+                <p class="text-secondary">Personal site hosted with GitHub Pages. This About page can live here as <code>index.html</code>.</p>
+                <div class="mt-auto d-flex gap-2">
+                  <a class="btn btn-sm btn-accent" href="https://github.com/PannaratWiriyaarritham/PannaratWiriyaarritham.github.io" target="_blank" rel="noopener" data-i18n="btn_open_repo">Open repo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add more cards as you create new repos -->
+        </div>
+
+        <div id="repo-list" class="row g-4 mt-1"></div>
+      </section>
+
+      <!-- Contact / Links -->
+      <section class="mt-5">
+        <div class="card">
+          <div class="card-body p-4">
+            <h2 class="h4 fw-semibold mb-3" data-i18n="links">Links</h2>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">• GitHub: <a class="link-accent" href="https://github.com/PannaratWiriyaarritham" target="_blank" rel="noopener">github.com/PannaratWiriyaarritham</a></li>
+            </ul>
+            <hr class="my-4">
+            <h3 class="h5 mb-3" data-i18n="contact">Contact</h3>
+            <form id="contactForm" class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label" for="name" data-i18n="contact_name">Name</label>
+                <input class="form-control" id="name" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="email" data-i18n="contact_email">Email</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="message" data-i18n="contact_message">Message</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+              </div>
+              <div class="col-12 d-flex gap-2">
+                <button class="btn btn-accent" type="submit" data-i18n="contact_send">Send</button>
+                <a class="btn btn-outline-light" href="https://github.com/PannaratWiriyaarritham" target="_blank" rel="noopener" data-i18n="contact_alt">Open GitHub Profile</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="py-5 mt-5 border-top border-opacity-25">
+    <div class="container text-center text-secondary">
+      <small>© <span id="y"></span> Pannarat Wiriyaarritham • <span data-i18n="footer_built">Built with Bootstrap 5</span></small>
+    </div>
+  </footer>
+
+  <script>
+    // YEAR
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // THEME TOGGLE (dark/light) with i18n label
+    const root = document.documentElement;
+    const themeBtn = document.getElementById('themeToggle');
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) root.setAttribute('data-bs-theme', savedTheme);
+
+    // I18N (EN/TH)
+    const i18n = {
+      en: {
+        badge: 'IT Student',
+        tagline: 'Just a normal IT student',
+        about: 'About',
+        about_p1: 'Hi! I\'m <strong>Pannarat</strong> — an IT student who loves learning by building: small websites, bots, and everyday utilities.',
+        about_p2: 'This page is built from public GitHub info. Please <a class="link-accent" href="https://github.com/PannaratWiriyaarritham" target="_blank" rel="noopener">follow</a> to see my latest work 🙌',
+        projects: 'Projects',
+        btn_view_github: 'View GitHub',
+        btn_projects: 'Projects',
+        btn_open_repo: 'Open repo',
+        links: 'Links',
+        quick_facts: 'Quick facts',
+        quick_education: 'Education:',
+        quick_focus: 'Focus:',
+        quick_interests: 'Interests:',
+        quick_location: 'Location/Timezone:',
+        hobbies: 'Hobbies & Favorites',
+        education: 'Education',
+        loading: 'Loading repositories…',
+        btn_theme_dark: 'Dark mode',
+        btn_theme_light: 'Light mode',
+        footer_built: 'Built with Bootstrap 5',
+        contact: 'Contact',
+        contact_name: 'Name',
+        contact_email: 'Email',
+        contact_message: 'Message',
+        contact_send: 'Send',
+        contact_alt: 'Open GitHub Profile'
+      },
+      th: {
+        badge: 'นักศึกษา IT',
+        tagline: 'นักศึกษา IT ธรรมดาคนหนึ่ง',
+        about: 'เกี่ยวกับฉัน',
+        about_p1: 'สวัสดี! ฉันคือ <strong>Pannarat</strong> — นักศึกษาสาย IT ที่ชอบเรียนรู้จากการลงมือทำ: เว็บไซต์ เครื่องมือเล็ก ๆ และบอท',
+        about_p2: 'หน้านี้สร้างจากข้อมูลสาธารณะบน GitHub โปรด <a class="link-accent" href="https://github.com/PannaratWiriyaarritham" target="_blank" rel="noopener">ติดตาม</a> เพื่อดูงานล่าสุดของฉัน 🙌',
+        projects: 'ผลงาน',
+        btn_view_github: 'เปิดดู GitHub',
+        btn_projects: 'ผลงาน',
+        btn_open_repo: 'เปิดรีโป',
+        links: 'ลิงก์',
+        quick_facts: 'ข้อมูลย่อ',
+        quick_education: 'การศึกษา:',
+        quick_focus: 'โฟกัส:',
+        quick_interests: 'ความสนใจ:',
+        quick_location: 'ที่อยู่/เขตเวลา:',
+        hobbies: 'งานอดิเรกและสิ่งที่ชอบ',
+        education: 'การศึกษา',
+        loading: 'กำลังโหลดรายการรีโป…',
+        btn_theme_dark: 'โหมดมืด',
+        btn_theme_light: 'โหมดสว่าง',
+        footer_built: 'สร้างด้วย Bootstrap 5',
+        contact: 'ติดต่อ',
+        contact_name: 'ชื่อ',
+        contact_email: 'อีเมล',
+        contact_message: 'ข้อความ',
+        contact_send: 'ส่ง',
+        contact_alt: 'เปิดโปรไฟล์ GitHub'
+      }
+    };
+
+    const btnEN = document.getElementById('btn-en');
+    const btnTH = document.getElementById('btn-th');
+    const savedLang = localStorage.getItem('lang') || 'en';
+    function applyLang(lang) {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        const html = i18n[lang][key];
+        if (html) el.innerHTML = html;
+      });
+      localStorage.setItem('lang', lang);
+      btnEN.classList.toggle('active', lang === 'en');
+      btnTH.classList.toggle('active', lang === 'th');
+      document.documentElement.setAttribute('lang', lang);
+      updateThemeBtnLabel();
+    }
+
+    function updateThemeBtnLabel() {
+      const isDark = (root.getAttribute('data-bs-theme') || 'dark') === 'dark';
+      const lang = localStorage.getItem('lang') || 'en';
+      themeBtn.textContent = isDark ? i18n[lang].btn_theme_light : i18n[lang].btn_theme_dark;
+    }
+
+    function setTheme(next) {
+      root.setAttribute('data-bs-theme', next);
+      localStorage.setItem('theme', next);
+      updateThemeBtnLabel();
+    }
+
+    // init lang + theme
+    applyLang(savedLang);
+    setTheme(root.getAttribute('data-bs-theme') || 'dark');
+    themeBtn.addEventListener('click', () => {
+      const now = root.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark';
+      setTheme(now);
+    });
+
+    // Dynamic repos
+    const repoMount = document.getElementById('repo-list');
+    if (repoMount) {
+      repoMount.innerHTML = `<div class="text-secondary">${i18n[localStorage.getItem('lang')||'en'].loading}</div>`;
+      fetch('https://api.github.com/users/PannaratWiriyaarritham/repos?per_page=100&sort=updated')
+        .then(r => r.json())
+        .then(list => {
+          if (!Array.isArray(list)) return;
+          list.sort((a,b)=> new Date(b.updated_at)-new Date(a.updated_at));
+          const filtered = list.filter(r => !r.fork && r.name !== 'PannaratWiriyaarritham.github.io').slice(0,6);
+          if (filtered.length === 0) { repoMount.innerHTML = ''; return; }
+          const grid = document.createElement('div');
+          grid.className = 'row g-4';
+          const lang = localStorage.getItem('lang') || 'en';
+          filtered.forEach(repo => {
+            const col = document.createElement('div');
+            col.className = 'col-12 col-md-6 col-lg-4';
+            col.innerHTML = `
+              <div class="card h-100">
+                <div class="card-body p-4 d-flex flex-column">
+                  <div class="d-flex align-items-start justify-content-between mb-2">
+                    <h3 class="h5 fw-semibold m-0">${repo.name}</h3>
+                    <span class="badge text-bg-secondary">${repo.private ? 'Private' : 'Public'}</span>
+                  </div>
+                  <p class="text-secondary">${repo.description ? repo.description : ''}</p>
+                  <div class="mt-auto d-flex gap-2">
+                    <a class="btn btn-sm btn-accent" href="${repo.html_url}" target="_blank" rel="noopener">${i18n[lang].btn_open_repo}</a>
+                  </div>
+                </div>
+              </div>`;
+            grid.appendChild(col);
+          });
+          repoMount.innerHTML = '';
+          repoMount.appendChild(grid);
+        })
+        .catch(()=>{ repoMount.innerHTML=''; });
+    }
+
+    // Contact form (mailto draft). Replace recipient with your real email later.
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+        const to = 'your-email@example.com'; // TODO: set your email
+        const subject = `Contact from ${name}`;
+        const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0A${message}`;
+        window.location.href = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${body}`;
+      });
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
